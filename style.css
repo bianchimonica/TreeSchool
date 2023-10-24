@@ -1,5 +1,10 @@
 
-body{  font: 12px Verdana, arial; }
+body{  
+    height: 100vh;
+    font: 12px Verdana, arial; 
+    background-color: #eec0c6;
+    background-image: linear-gradient(315deg, #eec0c6 0%, #e58c8a 74%);
+}
 
 #logo{ 
     border-radius: 50%;
@@ -18,12 +23,16 @@ body{  font: 12px Verdana, arial; }
 .tdMenu a {  text-decoration: none; }
 
 .tdMenu a:hover{
-    color: rgb(218, 240, 197);
+    color: rgb(140, 100, 189);
     text-decoration: underline double;
 }
 
+.aVisited:visited{
+    color: blue;
+}
+
 #menu{
-    background-color: rgb(216, 138, 212); 
+    background-color: rgb(176, 219, 159); 
     width:80% ; 
     height: 60px; 
     border-radius: 20px;
@@ -85,7 +94,7 @@ label{
 }
 
 #btnInvia:hover{
-    background-color: rgb(108, 184, 89);
+    background-color: rgb(89, 111, 184);
     width: 170px
 }
 
