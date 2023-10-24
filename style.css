@@ -1,0 +1,101 @@
+
+body{  font: 12px Verdana, arial; }
+
+.tdMenu{  width: 120px; }
+
+.tdMenu a {  text-decoration: none; }
+
+.tdMenu a:hover{
+    color: rgb(218, 240, 197);
+    text-decoration: underline double;
+}
+
+#menu{
+    background-color: rgb(216, 138, 212); 
+    width:80% ; 
+    height: 60px; 
+    border-radius: 20px;
+}
+
+#tableMenu{
+    text-align: center; 
+    font-weight: bold;
+    font-size: 20px; 
+    height: 100%;
+}
+
+#fieldsetForm{
+    background-color: rgb(114, 192, 234);
+    width: 400px; 
+    border-radius: 30px;
+    padding: 30px 0px 20px 0px;
+    border: 0px;
+}
+
+#legendForm{
+    background-color: rgb(114, 142, 234); 
+    border-radius: 15px; 
+    font-size: 15px;
+    width: 250px;
+}
+
+input{
+    margin-top: 7px;
+    height: 20px;
+    border: 0px;
+    border-radius: 4px;
+    width: 170px;
+    text-align: center;
+}
+
+input[type="date"]{
+    height: 25px;
+    text-align: center;
+}
+
+input:focus{
+    outline: none;
+    background-color: rgb(218, 240, 197);
+}
+
+label{
+    font-size: 15px;
+}
+
+
+#btnInvia{
+    margin-top: 20px;
+    width:100px; 
+    height: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 0;
+}
+
+#btnInvia:hover{
+    background-color: rgb(108, 184, 89);
+    width: 170px
+}
+
+#btnReset{
+    background: transparent; 
+    border: 0; 
+    cursor: pointer;
+}
+
+#btnReset  img { width: 20px; height: 20px; }
+
+#btnReset:hover{
+    background-color: rgb(236, 110, 110);
+    border-radius: 10px;
+}
+
+.widthSocial{ width: 50px;}  
+
+.widthSocial img { width: 30px; }
+
+#tableSocial{
+    text-align: center;
+}
+
+#linkedinLogo{  width: 45px; }

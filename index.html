@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Bianchi Monica</title>
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
-<body style="font: 12px Verdana, arial;">
+<body>
 
 <br>
 <header>
@@ -18,12 +21,12 @@
         </tr>
     </table>
    
-    <center><div id="menu" style="background-color: rgb(216, 138, 212); width:80% ; height: 60px; border-radius: 20px;">
-        <table style="text-align: center; font-size: 20px; height: 100%;">
+    <center><div id="menu">
+        <table id="tableMenu">
             <tr>
-                <td style="width: 120px;"> <a href="www.homesito.it" style="text-decoration: none;">Home</a> </td>
-                <td style="width: 120px;"> <a href="www.homesito.it/chisiamo" style="text-decoration: none;">Chi Siamo</a> </td>
-                <td style="width: 120px;"> <a href="www.homesito.it/contatti" style="text-decoration: none;">Contatti</a> </td>
+                <td  class="tdMenu"> <a href="www.homesito.it">Home</a> </td>
+                <td class="tdMenu"> <a href="www.homesito.it/chisiamo" >Chi Siamo</a> </td>
+                <td class="tdMenu"> <a href="www.homesito.it/contatti" >Contatti</a> </td>
             </tr>
         </table>
     </div></center>
@@ -33,8 +36,8 @@
 
 <center><div id="form">
 <form action="">
-    <fieldset style="background-color: rgb(114, 192, 234); width: 400px; border-radius: 30px;">
-        <legend style="background-color: rgb(114, 142, 234); border-radius: 5px; border: 1px solid rgb(117, 117, 117);">Form di iscrizione</legend>
+    <fieldset id="fieldsetForm">
+        <legend  id="legendForm" align="center">Form di iscrizione</legend>
 
             <label for="nome">Nome</label><br>
             <input type="text" id="Nome" ><br><br>
@@ -51,9 +54,9 @@
             <label for="datanascita">Data di nascita</label><br>
             <input type="date" id="datanascita"><br><br>
 
-            <button type="submit" style="width:70px; cursor: pointer;" onclick="alert('Invio i dati...')"> Invia </button>
+            <button type="submit" id="btnInvia" onclick="alert('Invio i dati...')"> Invia </button>
             <br><br>
-            <button type="reset" style="background: transparent; border: 0; cursor: pointer;"> <img src="https://cdn-icons-png.flaticon.com/512/4021/4021663.png" title="Cancella dati form" style="width: 20px; height: 20px;"> </button>
+            <button type="reset"  id="btnReset"> <img src="https://cdn-icons-png.flaticon.com/512/4021/4021663.png" title="Cancella dati form"> </button>
 
     </fieldset>
    
@@ -62,26 +65,19 @@
 
 <br><br>
 
+
 <footer>
+
    <center> <div id="social">
     
-    <table  style="text-align: center;">
+    <table id="tableSocial">
         <tr>
-            <td style="width: 50px;" ><a href="https://facebook.com"> <img src="https://cdn3.iconfinder.com/data/icons/picons-social/57/46-facebook-512.png" width="30px"></a></td>
-            <td style="width: 50px;"> <a href="https://instagram.com"> <img src="https://www.unife.it/it/notizie/newsletter/loghi-social/insta.png/@@images/image.png" width="30px"></a></td>
-            <td style="width: 50px;"> <a href="https://linkedin.com"> <img src="https://static.vecteezy.com/system/resources/previews/021/492/181/original/linkedin-logo-free-download-free-png.png" width="30px"></a></td>
+            <td  class="widthSocial" ><a href="https://facebook.com"> <img src="https://cdn3.iconfinder.com/data/icons/picons-social/57/46-facebook-512.png" ></a></td>
+            <td class="widthSocial" > <a href="https://instagram.com"> <img src="https://www.unife.it/it/notizie/newsletter/loghi-social/insta.png/@@images/image.png" ></a></td>
+            <td class="widthSocial" > <a href="https://linkedin.com"> <img src="https://static.vecteezy.com/system/resources/previews/021/492/181/original/linkedin-logo-free-download-free-png.png" id="linkedinLogo"></a></td>
         </tr>
     </table>
-        
-
-        
-
-
-    <!-- PRIMO BOTTONE BUTTON TYPE
-         <button type="button" style="background: transparent; border:0px; cursor: pointer;" onclick="location.href='https://linkedin.com'">
-        <img src="https://static.vecteezy.com/system/resources/previews/021/492/181/original/linkedin-logo-free-download-free-png.png" width="30px">
-   </button> -->
-
+    
     </div> </center>
 </footer>
 
