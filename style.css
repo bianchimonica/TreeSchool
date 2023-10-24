@@ -1,6 +1,18 @@
 
 body{  font: 12px Verdana, arial; }
 
+#logo{ 
+    border-radius: 50%;
+    width: 100px;
+}
+
+#titleSito{
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline wavy rgb(189, 192, 166);
+}
+
 .tdMenu{  width: 120px; }
 
 .tdMenu a {  text-decoration: none; }
