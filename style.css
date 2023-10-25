@@ -1,41 +1,84 @@
 
-body{  
-    height: 100vh;
+body{
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
     font: 12px Verdana, arial; 
-    background-color: #eec0c6;
-    background-image: linear-gradient(315deg, #eec0c6 0%, #e58c8a 74%);
+    background-color: #92d2f7;
+    /* background-color: #63a4ff;
+    background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%); */
+}
+
+.centerDiv{
+    margin: auto;
+}
+
+.logoBox{
+    width: fit-content;
 }
 
 #logo{ 
+    left: -200px;
+    bottom: 15px;
+    position: absolute;
     border-radius: 50%;
-    width: 100px;
+    width: 200px;
 }
 
 #titleSito{
-    font-size: 40px;
+    font-size: 60px;
     font-weight: bold;
     font-style: italic;
-    text-decoration: underline wavy rgb(189, 192, 166);
+    text-decoration: underline wavy rgb(236, 172, 53);
+    color: rgb(0, 0, 0);
 }
 
-.tdMenu{  width: 120px; }
+.tdMenu{  
+    width: 200px; 
+}
 
-.tdMenu a {  text-decoration: none; }
+.tdMenu a {  
+    text-decoration: none;
+    color: rgb(233, 171, 38); 
+    
+}
 
 .tdMenu a:hover{
-    color: rgb(140, 100, 189);
-    text-decoration: underline double;
+    color: rgb(65, 129, 212);
+    z-index: 2;
 }
 
-.aVisited:visited{
-    color: blue;
+.relative{
+    position: relative;
+}
+
+.menuHover{
+    transition: all 0.3s;
+}
+
+.menuHover:hover::before{
+    content: " ";
+    background-image: url(https://tanadelluppolo.it/wp-content/uploads/2021/03/cerchio.png);
+    background-size: 130px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 35px;
+    bottom: 0px;
+    width: 145px;
+    height: 50px;
+    display: inline-block;
+    filter: brightness(10);
+    z-index:1
 }
 
 #menu{
-    background-color: rgb(176, 219, 159); 
-    width:80% ; 
+    background-color: rgba(255, 255, 255, 0.308); 
+    width: 90% ; 
     height: 60px; 
-    border-radius: 20px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
 }
 
 #tableMenu{
@@ -46,7 +89,7 @@ body{
 }
 
 #fieldsetForm{
-    background-color: rgb(114, 192, 234);
+    background-color: rgba(81, 156, 218, 0.993);
     width: 400px; 
     border-radius: 30px;
     padding: 30px 0px 20px 0px;
@@ -54,61 +97,118 @@ body{
 }
 
 #legendForm{
-    background-color: rgb(114, 142, 234); 
+    background-color: rgb(236, 172, 53); 
+    padding: 5px 0px 5px 0px;
     border-radius: 15px; 
     font-size: 15px;
     width: 250px;
 }
 
 input{
-    margin-top: 7px;
-    height: 20px;
+    font-size: 15px;
+    margin-top: 10px;
+    height: 25px;
     border: 0px;
-    border-radius: 4px;
-    width: 170px;
+    border-radius: 10px;
+    width: 200px;
     text-align: center;
+    background: #ffffff88;
+    transition: width 0.3s;
 }
 
 input[type="date"]{
     height: 25px;
     text-align: center;
+    cursor: pointer;
 }
 
 input:focus{
     outline: none;
-    background-color: rgb(218, 240, 197);
+    background-color: rgb(240, 197, 117);
+    width: 220px;
 }
 
 label{
     font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+#form{
+    width: fit-content;
+    margin-top: 40px;
+    text-align: center;
+}
+
+#form::before{
+    content: "";
+    background-image: url("https://cdni.iconscout.com/illustration/free/thumb/free-about-us-2061897-1740019.png");
+    background-size: 530px;
+    display: inline-block;
+    position:absolute;
+    bottom: 0px;
+    height: 270px;
+    width: 560px;
+    left: -360px;
+    background-repeat: no-repeat;
+    pointer-events: none;
 }
 
 
 #btnInvia{
     margin-top: 20px;
-    width:100px; 
-    height: 20px;
+    width:160px; 
+    height: 35px;
     cursor: pointer;
     border-radius: 10px;
     border: 0;
+    background: rgb(255, 255, 255);
+    transition: transform 0.3s;
+}
+
+#btnInvia::after{
+    content: " ◀";
+    color: rgb(95, 116, 185);
+}
+
+#btnInvia::before{
+    content: "▶ ";
+    color: rgb(95, 116, 185);
 }
 
 #btnInvia:hover{
-    background-color: rgb(89, 111, 184);
-    width: 170px
+    background-color: rgb(95, 116, 185);
+    color: white;
+    transform: scale(1.2);
 }
+
+#btnInvia:hover::after, #btnInvia:hover::before{
+    color: rgb(236, 172, 53);
+}
+
 
 #btnReset{
     background: transparent; 
     border: 0; 
     cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 10px;
+
 }
 
-#btnReset  img { width: 20px; height: 20px; }
+#btnReset  img { 
+    width: 20px;
+    height: 20px;
+}
+
 
 #btnReset:hover{
     background-color: rgb(236, 110, 110);
     border-radius: 10px;
+}
+
+footer{
+    padding-top: 70px;
 }
 
 .widthSocial{ width: 50px;}  
@@ -120,3 +220,7 @@ label{
 }
 
 #linkedinLogo{  width: 45px; }
+
+.socialHover{ transition: transform 0.3s; }
+
+.socialHover:hover{  transform: scale(1.4); }
