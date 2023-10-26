@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    min-height: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(35, 37, 49);
+    margin: 40px 0 40px 0;
+}
+
+.text{
+    color: rgba(255, 255, 255, 0.61);
+}
+
+.container{
+    border: 1px solid rgba(255, 255, 255, 0.342);
+    background-color: rgb(78, 64, 64);
+    width: 60%;
+    border-radius: 	20px;
+}
+
+.page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.bodyCv{
+    font-size: 15px;
+    margin: 20px 0 0 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;    
+    justify-content: center;
+    gap: 15%;
+    flex-wrap: wrap;
+}
+
+.image{
+    width: 250px;
+    border: 2px solid rgba(255, 255, 255, 0.568);
+    padding: 5px;
+    border-radius: 50%;
+    background: #ffffff9f;
+}
+
+.name{
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.top{
+    margin-top: 60px;
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    flex-wrap: wrap;
+}
+
+.margin-bottom{margin-bottom: 15px;}
+.margin{ margin-left: 20px; }
+
+.pInformation{
+
+    text-align: start;
+}
+
+.tabella{
+    margin-top: 20px;
+}
+
+.firstRow{height: 40px;}
+
+.width{
+    width: 100px;
+    text-align: center;
+}
+
+.bold{font-weight: bold;}
+.italic{font-style: italic;}
+
+.content{
+    height: 100%;
+}
+
+.birth::before{
+    content: url(./img/birthday-cake.png);
+    margin-right: 10px;
+    opacity: .8;
+}
+
+.address::before{
+    content: url(./img/home.png);
+    margin-right: 10px;
+    opacity: .8;
+
+}
+
+.email::before{
+    content: url(./img/email.png);
+    margin-right: 10px;
+    opacity: .8;
+}
+
+.tel::before{
+    content: url(./img/call.png);
+    margin-right: 10px;
+    opacity: .8;
+}
+
+.schoolAdd{
+    font-weight: 400;
+}
+
+.schoolCity{
+    color: rgba(255, 255, 255, 0.603);
+}
+
+.vote{ font-weight: 700;}
+
+.voteP{font-weight: lighter; color: rgb(255, 255, 255);}
+
+.schoolBox{
+    height: fit-content;
+}
+
+.workBox{
+    height: 75%;
+}
+
+.workContainer{
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+}
+
+.work{
+    height: fit-content; 
+    position: relative;
+    padding-left: 65px;
+}
+
+
+.workN{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-size: 30px;
+}
+
+.workInfo{
+    color: rgba(255, 255, 255, 0.603);
+    font-size: 13px;
+}
+
+#build::before{
+    content: url(./img/building.png);
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    opacity: .5;
+}
+
+#place::before{
+    content: url(./img/location.png);
+    position: absolute;
+    left: 20px;
+    top: 50px;
+    opacity: .5;
+}
+
+#period::before{
+    content: url(./img/calendar.png);
+    position: absolute;
+    left: 20px;
+    top: 95px; 
+    opacity: .5;
+}
+
+#position::before{
+    content: url(./img/user.png);
+    position: absolute;
+    left: 20px;
+    top: 140px; 
+    opacity: .5;
+}
+
+.bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.rightsBox{
+    width: 100%;
+    height: fit-content;
+    margin-top: 30px;
+}
+
+.rights{
+    color: rgba(255, 255, 255, 0.363);
+    font-size: 10px;
+    text-align: center;
+    margin: 10px;;
+}
+
+.line{
+    display: none;
+}
+
+
+/* ------- MEDIA ------ */
+
+
+@media screen and (max-width: 840px){
+
+    .container{
+        width: 90%;
+    }
+}
+    
+
+@media screen and (max-width: 420px) {
+
+    .line{
+        display: block;
+        width: 80%;
+        margin: auto;
+        height: 2px;
+        background-color: #ffffff23;
+        border: none;
+    }
+
+    .container{
+        width: 100%;
+    }
+
+
+    .left-side{  text-align: center !important;  }
+
+    .pInformation{ text-align: center;}
+
+    .pInformation > p {
+        margin: 0 0 10px 0;
+    }
+
+    .ability{
+        margin-top: 20px;
+    }
+
+    .ability > p {
+        margin: 0 0 10px 0;
+    }
+
+    .languages{
+        margin: 20px;
+    }
+
+    .tr{
+        height: 40px;
+    }
+
+    .right-side{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .schoolBox{ margin-top: 20px;}
+
+    .workBox{margin-top: 20px;}
+
+}
