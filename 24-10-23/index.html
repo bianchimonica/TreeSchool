@@ -4,6 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ============== FAVICON ============== -->
+    <link rel="shortcut icon" href="https://robohash.org/giallo" type="image/x-icon">
+
+
+
+    <!-- ======== GOOGLE FONTS ======== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">   
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+
     <title>Form Bianchi Monica</title>
 
     <link rel="stylesheet" href="style.css">
@@ -13,36 +30,33 @@
 <body>
 
 <br>
-<header>
+<header class="header">
 
-    <nav>
-
-        <div class="logoBox relative centerDiv">
-            <table>
-                <tr>
-                    <td> <img src="https://robohash.org/giallo" alt="logo" id="logo"></td>
-                    <td> <h1 id="titleSito"> Sito bellissimo</h1></td>
-                </tr>
-            </table>
+    <nav class="navbar">
+        <div class="logoBox">
+            <img src="https://robohash.org/giallo" alt="logo" id="logo"></td>
+            <h1 id="titleSito"> Sito bellissimo</h1></td>
         </div>
 
-        <div id="menu" class="centerDiv">
+        
+        <div id="menu">
             <table id="tableMenu">
                 <tr>
-                    <td  class="tdMenu relative"> <a href="www.homesito.it" class="menuHover">Home</a> </td>
-                    <td class="tdMenu relative"> <a href="www.homesito.it/chisiamo" class="menuHover" >Chi Siamo</a> </td>
-                    <td class="tdMenu relative"> <a href="www.homesito.it/contatti" class="menuHover" >Contatti</a> </td>
+                    <td class="tdMenu"> <a href="www.homesito.it" class="menuHover">Home</a> </td>
+                    <td class="tdMenu"> <a href="www.homesito.it/chisiamo" class="menuHover" >Chi Siamo</a> </td>
+                    <td class="tdMenu"> <a href="www.homesito.it/contatti" class="menuHover contacts" >Contatti</a> </td>
                 </tr>
             </table>
         </div>
-    </header>
     </nav>
+</header>
+    
 
 <br><br>
 
 
-<div id="form" class="relative centerDiv">
-<form action="">
+<div id="formbox" class="relative">
+<form action="" class="form">
     <fieldset id="fieldsetForm">
         <legend  id="legendForm" align="center">Form di iscrizione</legend>
 
@@ -75,17 +89,19 @@
 
 <footer>
 
-   <center> <div id="social">
+   <div id="social">
     
-    <table id="tableSocial">
-        <tr>
-            <td  class="widthSocial" ><a href="https://facebook.com"> <img src="https://cdn3.iconfinder.com/data/icons/picons-social/57/46-facebook-512.png" class="socialHover" ></a></td>
-            <td class="widthSocial" > <a href="https://instagram.com"> <img src="https://www.unife.it/it/notizie/newsletter/loghi-social/insta.png/@@images/image.png" class="socialHover" ></a></td>
-            <td class="widthSocial" > <a href="https://linkedin.com"> <img src="https://static.vecteezy.com/system/resources/previews/021/492/181/original/linkedin-logo-free-download-free-png.png" class="socialHover" id="linkedinLogo"></a></td>
-        </tr>
-    </table>
-    
-    </div> </center>
+        <table id="tableSocial">
+            <tr>
+                <td  class="widthSocial" ><a href="https://facebook.com"> <img src="https://cdn3.iconfinder.com/data/icons/picons-social/57/46-facebook-512.png" class="socialHover" ></a></td>
+                <td class="widthSocial" > <a href="https://instagram.com"> <img src="https://www.unife.it/it/notizie/newsletter/loghi-social/insta.png/@@images/image.png" class="socialHover" ></a></td>
+                <td class="widthSocial" > <a href="https://linkedin.com"> <img src="https://static.vecteezy.com/system/resources/previews/021/492/181/original/linkedin-logo-free-download-free-png.png" class="socialHover" id="linkedinLogo"></a></td>
+            </tr>
+        </table> 
+
+        <p class="rights">All rights reserved. Created by Bianchi Monica</p>
+
+    </div> 
 </footer>
 
 </body>

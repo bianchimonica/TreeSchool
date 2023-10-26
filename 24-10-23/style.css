@@ -1,5 +1,17 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif
+}
+
 body{
+
     overflow-x: hidden;
     height: 100%;
     width: 100%;
@@ -10,52 +22,74 @@ body{
     background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%); */
 }
 
-.centerDiv{
-    margin: auto;
+.navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
 
 .logoBox{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     width: fit-content;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
-#logo{ 
-    left: -200px;
-    bottom: 15px;
-    position: absolute;
+#logo{
     border-radius: 50%;
     width: 200px;
+    position: relative;
+    bottom: 20px;
+    font-family: 'Agbalumo';
 }
 
 #titleSito{
+    position: relative;
+    font-family: 'Pacifico', cursive;
+    margin: 0;
+    height: 100px;
     font-size: 60px;
-    font-weight: bold;
-    font-style: italic;
-    text-decoration: underline wavy rgb(236, 172, 53);
+    /* text-decoration: underline wavy rgb(236, 172, 53); */
     color: rgb(0, 0, 0);
+}
+
+#titleSito::before{
+  content: "~~~~~~~~~~~~";
+  font-size: 1em;
+  font-weight: 900;
+  font-family: 'Pacifico', cursive;
+  color: rgb(241, 171, 20);
+  width: 100%;
+  position: absolute;
+  top: 45px;
+  left: -1px;
+  overflow: hidden;
 }
 
 .tdMenu{  
     width: 200px; 
+    position: relative;
 }
 
 .tdMenu a {  
     text-decoration: none;
     color: rgb(233, 171, 38); 
-    
+    font-weight: 900;
 }
 
 .tdMenu a:hover{
     color: rgb(65, 129, 212);
     z-index: 2;
-}
 
-.relative{
-    position: relative;
-}
-
-.menuHover{
     transition: all 0.3s;
 }
+
 
 .menuHover:hover::before{
     content: " ";
@@ -64,7 +98,7 @@ body{
     background-repeat: no-repeat;
     position: absolute;
     left: 35px;
-    bottom: 0px;
+    top: -10px;
     width: 145px;
     height: 50px;
     display: inline-block;
@@ -79,9 +113,13 @@ body{
     border-radius: 40px;
     display: flex;
     justify-content: center;
+    border-bottom: 4px solid rgba(107, 163, 209, 0.568);
 }
 
 #tableMenu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     text-align: center; 
     font-weight: bold;
     font-size: 20px; 
@@ -93,11 +131,13 @@ body{
     width: 400px; 
     border-radius: 30px;
     padding: 30px 0px 20px 0px;
-    border: 0px;
+    border: 0;
 }
 
 #legendForm{
+    font-weight: 600;
     background-color: rgb(236, 172, 53); 
+    border-bottom: 3px solid rgb(168, 130, 60);
     padding: 5px 0px 5px 0px;
     border-radius: 15px; 
     font-size: 15px;
@@ -106,6 +146,7 @@ body{
 
 input{
     font-size: 15px;
+    font-weight: 600;
     margin-top: 10px;
     height: 25px;
     border: 0px;
@@ -134,13 +175,22 @@ label{
     color: white;
 }
 
-#form{
-    width: fit-content;
+
+#formbox{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     margin-top: 40px;
     text-align: center;
 }
 
-#form::before{
+.form{
+    position: relative;
+}
+
+.form::before{
     content: "";
     background-image: url("https://cdni.iconscout.com/illustration/free/thumb/free-about-us-2061897-1740019.png");
     background-size: 530px;
@@ -149,51 +199,56 @@ label{
     bottom: 0px;
     height: 270px;
     width: 560px;
-    left: -360px;
+    right: 190px;
     background-repeat: no-repeat;
     pointer-events: none;
 }
 
 
 #btnInvia{
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
     margin-top: 20px;
     width:160px; 
     height: 35px;
     cursor: pointer;
     border-radius: 10px;
     border: 0;
-    background: rgb(255, 255, 255);
+    background: rgb(95, 116, 185);
+    border-bottom: 3px solid rgb(68, 86, 145);
     transition: transform 0.3s;
 }
 
-#btnInvia::after{
-    content: " ◀";
-    color: rgb(95, 116, 185);
-}
-
-#btnInvia::before{
-    content: "▶ ";
-    color: rgb(95, 116, 185);
-}
-
 #btnInvia:hover{
-    background-color: rgb(95, 116, 185);
+    background-color: rgb(236, 172, 53);
     color: white;
     transform: scale(1.2);
 }
 
-#btnInvia:hover::after, #btnInvia:hover::before{
+#btnInvia::after{
+    content: " ◀";
     color: rgb(236, 172, 53);
+}
+
+#btnInvia::before{
+    content: "▶ ";
+    color: rgb(236, 172, 53);
+}
+
+#btnInvia:hover::after, #btnInvia:hover::before{
+    color: rgb(95, 116, 185);
 }
 
 
 #btnReset{
+    padding: 10px;
     background: transparent; 
     border: 0; 
     cursor: pointer;
     transition: background-color 0.3s;
     border-radius: 10px;
-
+    transition: transform 0.3s;
 }
 
 #btnReset  img { 
@@ -203,6 +258,7 @@ label{
 
 
 #btnReset:hover{
+    transform: scale(1.2);
     background-color: rgb(236, 110, 110);
     border-radius: 10px;
 }
@@ -211,6 +267,13 @@ footer{
     padding-top: 70px;
 }
 
+
+#social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
 .widthSocial{ width: 50px;}  
 
 .widthSocial img { width: 30px; }
@@ -224,3 +287,88 @@ footer{
 .socialHover{ transition: transform 0.3s; }
 
 .socialHover:hover{  transform: scale(1.4); }
+
+.rights{
+    color: rgba(0, 0, 0, 0.555);
+}
+
+
+/* ---------------- MEDIA ----------------*/
+
+@media screen and (max-width: 835px){
+
+    .logoBox{
+        gap: 0px;
+    }
+
+    #menu {
+        margin-top: 30px;
+    }
+
+    .menuHover:hover::before{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 620px){
+    .logoBox{
+        flex-direction: column;
+    }
+
+    #menu {
+        margin-top: 50px;
+    }
+
+    .form::before{
+        background-size: 350px;
+        right: -5%;
+        bottom: -34%;
+        height: 270px;
+        width: 560px;
+    }
+
+}
+
+@media screen and (max-width: 430px){
+    .menuHover:hover::before{
+        display: none;
+    }
+  }
+
+
+@media screen and (max-width: 320px) {
+
+    #titleSito{
+        font-size: 40px;
+    }
+
+    #titleSito::before{
+        top: 30px;
+    }
+
+    .logoBox{
+        flex-direction: column;
+    }
+
+    #menu{
+        border-radius: 0px;
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    .menuHover:hover::before{
+        display: none;
+    }
+
+    .form::before{
+        background-size: 300px;
+        right: -17%;
+        bottom: -36%;
+        height: 270px;
+        width: 560px;
+    }
+
+  }
+
+ 
