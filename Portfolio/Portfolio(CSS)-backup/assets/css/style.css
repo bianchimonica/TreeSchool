@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+
+    background-color: #FFF2D8;
+    box-sizing: border-box;
+    position: relative;
+    overflow-x: hidden;
+}
+
+
+body:after{
+    content: " ";
+    background: url("/Portfolio/assets/img/background.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 550px;
+    position: absolute;
+    top: -110px;
+    display: inline-block;
+    z-index: -1;
+}
+
+
+.bold{ font-weight: bolder;}
+.italic{font-style: italic;}
+.underline{text-decoration: underline;}
+
+.bai{
+    color: #113946;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.alata{
+    font-family: 'Alata', sans-serif;
+    color: #113946;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+
+.head-container{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hamburger-menu{
+    position: absolute;
+    left: 20px;
+}
+
+#portfolio-txt{
+    font-family: 'Alata', sans-serif;
+    color: #113946;
+}
+
+.sp-row{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+}
+
+#sp-row{
+    background-color: #113946;
+    width: 60%;
+    height: 4px;
+    border-radius: 10px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name-fd-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.name{
+    color: #113946;
+    font-family: 'Italiana', sans-serif;
+    font-size: 70px;
+    font-weight: lighter;
+}
+
+.fd-container{
+    margin-bottom: 120px;
+}
+
+.fd-txt{
+    margin-top: 10px; 
+    font-size: 17px;
+}
+
+.about-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.information-container{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.chisono{
+    font-weight: lighter;
+    color: #113946;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.image-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 20px 0;
+
+}
+
+#image{ width: 350px;} 
+
+.p-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    margin-bottom: 70px;
+}
+
+#p-txt{
+    text-align: center;
+    width: fit-content;
+    margin-top: 10px;
+    font-size: 17px;
+    position: relative;
+    padding: 0 20px 0 20px;
+}
+
+#p-txt::after{
+    content: " ";
+    background: url("/Portfolio/assets/img/Emoji.svg") no-repeat;
+    position: absolute;
+    bottom: -40px;
+    right: 10%;
+    width: 40px;
+    height: 40px;
+}
+
+.hobby-container{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 70px;
+    position: relative;
+}
+
+.hobby-container::after{
+    content: " ";
+    background: url("/Portfolio/assets/img/background.png") no-repeat;
+    transform: scaleY(-1) scaleX(-1);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 550px;
+    position: absolute;
+    top: -110px;
+    display: inline-block;
+    z-index: -1;
+}
+
+.hobby-container::before{
+    content: " ";
+    background: url("/Portfolio/assets/img/background.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 550px;
+    position: absolute;
+    top: 140px;
+    display: inline-block;
+    z-index: -1;
+}
+
+#hobbyTxt{
+    width: 100%;
+    font-family: 'Alata', sans-serif;
+    font-weight: lighter;
+    color: #113946;
+    font-size: 30px;
+    margin-bottom: 5px;
+    position: relative;
+    text-align: center;
+}
+
+#hobbyTxt::before{
+    content: " ";
+    background: url("/Portfolio/assets/img/hobbyBox.svg") no-repeat;
+    background-size: auto;
+    background-position: center;
+    width: 100%;
+    top: -25px;
+    left: 0px;
+    height: 100px;
+    position: absolute;
+    display: inline-block;
+    z-index: 1;
+}
+
+.h-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hobbySeparator{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mountain-container{
+    margin: 40px 0 20px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#mount-txt{
+    font-size: 17px;
+    text-align: center;
+    width: 30%;
+}
+
+#snowboard-container{
+    margin: 20px 0 20px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#snow-txt{
+    font-size: 17px;
+    text-align: center;
+    width: 40%;
+}
+
+#videogame-container{
+    margin: 20px 0 20px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#videogame-txt{
+    font-size: 17px;
+    text-align: center;
+    width: 40%;
+}
+
+#interior-container{
+    margin: 20px 0 20px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#interior-txt{
+    font-size: 17px;
+    text-align: center;
+    width: 40%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ============ TABLET ============ */
+@media screen and (min-width: 480px){
+    
+}
+
+
+/* ============ PC =========== */
+@media screen and (min-width: 769px){
+    body:after{
+        top: 70px;
+    }
+
+    .header{
+        background: #EAD7BB;
+        flex-direction: row;
+        height: 100px;
+    }
+
+    .head-container{
+        margin-top: 0px;
+        justify-content: flex-start;
+        margin-left: 80px;
+        width: 100px;
+    }
+
+    .sp-row{ margin: 0 50px 0 0; }
+
+    #sp-row{
+        background-color: #113946;
+        width: 90%;
+        height: 2px;
+        border-radius: 10px;
+        margin-top: 5px;
+    }
+
+    .hamburger-menu{ display: none;}
+
+    .name{
+        font-size: 130px;
+    }
+
+    .fd-txt{
+        font-size: 30px;
+    }
+
+    .information-container{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 100px 0 100px 0;
+    }
+
+    .about-container{
+        width: 100%; 
+        align-items: flex-start;
+        margin-left: 20%;
+    }
+
+    .chisono{
+        font-size: 45px;
+    }
+
+    .image-container{margin: 0;}
+    #image{width: 450px;}
+
+    .p-container{margin: 0 10% 0 0;}
+
+    #p-txt{font-size: 25px;}
+
+    #p-txt::after{
+        bottom: -60px;
+        background-size: 40px 40px;
+    }
+
+    #hobbyTxt{font-size: 45px; margin: 50px 0 100px 0;}
+    #hobbyTxt::before{background-size: 400px; top:-15px;}
+
+    .hobby-container::after{  top: -40px; }
+
+    #mountain-container, #videogame-container, #interior-container{
+        flex-direction: column;
+        margin: 0;
+    }
+    #snowboard-container, #interior-container{
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+
+    #mount-txt, #snow-txt, #videogame-txt, #interior-txt{font-size: 25px;}
+
+    #snow-txt, #videogame-txt, #interior-txt{
+        width: 70%;
+    }
+
+    #mount-img{margin-left: 20px;}
+    #interior-img{margin-right: 20px;}
+
+    .h-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px 0 20px;
+    }
+
+    .hobbySeparator{
+        transform: rotate(90deg);
+        width: 5%;
+    }
+
+
+
+    .imgHobby{
+        width: 120px;
+        margin-bottom: 25px;
+    }
+
+    
+}
+
+
+/* ============ MONITOR 21:9 =========== */
+@media screen and (min-width: 1900px){
+    body:after{
+    content: " ";
+    background: url("/Portfolio/assets/img/background.png");
+    background-repeat: repeat-x;
+    background-size: 100% 600px;
+    top: 20px;
+    width: 100%;
+    height: 1000px;
+    position: absolute;
+    }
+
+    .hobby-conatiner::after{
+        content: " ";
+        background: url("/Portfolio/assets/img/background.png") no-repeat;
+        transform: scaleY(-1) scaleX(-1);
+        background-size: 100% 600px;
+        background-position: center;
+        width: 100%;
+        height: 2000px;
+        position: absolute;
+        top: 0px;
+        display: inline-block;
+        z-index: -1;
+    }
+    
+    .hobby-conatiner::before{
+        content: " ";
+        background: url("/Portfolio/assets/img/background.png") no-repeat;
+        background-size: 100% 600px;
+        background-position: center;
+        width: 100%;
+        height: 1000px;
+        position: absolute;
+        top: 140px;
+        display: inline-block;
+        z-index: -1;
+    }
+
+    .fd-txt{
+        font-size: 30px;
+    }
+}
+
