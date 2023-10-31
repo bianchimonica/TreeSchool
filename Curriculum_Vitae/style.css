@@ -227,17 +227,12 @@ body{
 
 
 /* ------- MEDIA ------ */
-
-
-@media screen and (max-width: 840px){
-
-    .container{
-        width: 90%;
-    }
-}
     
+@media screen and (max-width: 710px) {
 
-@media screen and (max-width: 420px) {
+    .top{
+        flex-direction: column;
+    }
 
     .line{
         display: block;
@@ -251,7 +246,6 @@ body{
     .container{
         width: 100%;
     }
-
 
     .left-side{  text-align: center !important;  }
 
@@ -293,9 +287,18 @@ body{
         align-items: center;
     }
 
-
-    .schoolBox{ margin-top: 20px;}
+    .schoolBox{ 
+    margin-top: 20px; 
+    text-align: center;
+    }
 
     .workBox{margin-top: 20px;}
 
+}
+
+
+@media screen and (max-width: 1250px){
+    .container{
+        width: 90%;
+    }
 }

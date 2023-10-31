@@ -11,7 +11,6 @@
 }
 
 body{
-
     overflow-x: hidden;
     height: 100%;
     width: 100%;
@@ -295,7 +294,7 @@ footer{
 
 /* ---------------- MEDIA ----------------*/
 
-@media screen and (max-width: 835px){
+/* @media screen and (max-width: 835px){
 
     .logoBox{
         gap: 0px;
@@ -309,15 +308,20 @@ footer{
         display: none;
     }
 
-}
+} */
 
 @media screen and (max-width: 620px){
+
     .logoBox{
         flex-direction: column;
     }
 
     #menu {
         margin-top: 50px;
+    }
+
+    .menuHover:hover::before{
+        display: none;
     }
 
     .form::before{
@@ -329,13 +333,6 @@ footer{
     }
 
 }
-
-@media screen and (max-width: 430px){
-    .menuHover:hover::before{
-        display: none;
-    }
-  }
-
 
 @media screen and (max-width: 320px) {
 
@@ -368,6 +365,8 @@ footer{
         height: 270px;
         width: 560px;
     }
+
+    
 
   }
 
